@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Racing Sans One">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <style>
+        *{
+            font-family: "Racing Sans One";
+        }
+        h2{
+            font-size: 35px;
+        }
+        p{
+            padding-top: 35px;
+            font-size: larger;
+        }
+        .PlusMinusBtn{
+            width: 30px;
+            height: 30px;
+            border-radius: 100%;
+            background-color: yellow;
+            align-items: center;
+            justify-content: center;
+            padding: 6px;
+        }
+        .PlusMinusBtn:hover{
+            background-color: yellowgreen;
+        }
+    </style>
+    <title>FOOD WALAH</title>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary m-3 bg-secondary" data-bs-theme="secondary">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><span class="text-warning">Food Walah</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">DRINK</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                GATHERINGS
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">PARTIES</a></li>
+                <li><a class="dropdown-item" href="#">EVENTS</a></li>
+                <li><a class="dropdown-item" href="#">SHAADI</a></li>
+                <li><a class="dropdown-item" href="#">WALIMA</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+           </div>
+        </div>
+    </nav>
+    <!-- Description -->
+    <div class="container my-5">
+        <div class="row ">
+            <div class="col-11 col-md-6">
+                <img  class="img-fluid mx-2 mt-4" src="images//chicken Afghani Tikka.jpg" alt="" width="400px" height="550px">
+            </div>
+            <div class="col-11 col-md-6">
+                <h1 class=" mt-5 mx-2 mt-sm-2 mt-lg-2">CHICKEN AFGHANI TIKKA</h1>
+                <p class="mx-2">Chicken tikka is a chicken dish originating in the Indian subcontinent during the Mughal era. The dish is popular in India, Bangladesh, Pakistan and the United Kingdom. It is traditionally small pieces of boneless chicken baked using skewers on a brazier called angeethi or over charcoal after marinating in Indian spices and dahi (yogurt)—essentially a boneless version of tandoori chicken.</p>
+                <h4>How much amount do yow want:</h4>
+                <div class="d-flex align-item-center my-3">
+                    <div class="PlusMinusBtn rounded">
+                        <i class="fa-solid fa-minus"></i>
+                    </div>
+                    <span class=" fs-4 mx-3">1</span>
+                    <div class="PlusMinusBtn rounded">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                </div>
+                <div>
+                    <button type="button" class="btn btn-success mt-4 text-center">Order Now</button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script> 
+</body>
+</html>

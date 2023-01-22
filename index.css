@@ -1,0 +1,32 @@
+*{
+    font-family: "Racing Sans One";
+}
+.navbar-brand{
+    font-weight: 900;
+}
+/* .navbar{
+    position: absolute;
+} */
+.slider{
+    min-height: 100px;
+    margin:10px ;
+    /* position: relative;
+    top: 10px; */
+}
+.ad{
+    /* height: 60px; */
+    width: 1200px;
+    margin-right: 70px;
+    font-size: 25px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.card{
+    justify-content: space-around;
+    margin-left: 30px;
+}
+/* .fa-solid{
+    margin-top: 5px;
+    padding: 6px;
+} */

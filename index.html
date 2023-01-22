@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Racing Sans One">
+    <title>Bootstrap</title>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary m-3 bg-secondary" data-bs-theme="secondary">
+    <div class="container-fluid">
+    <a class="navbar-brand" href="index.html"><span class="text-warning">Food Walah</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#">DRINK</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            GATHERINGS
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">PARTIES</a></li>
+            <li><a class="dropdown-item" href="#">EVENTS</a></li>
+            <li><a class="dropdown-item" href="#">SHAADI</a></li>
+            <li><a class="dropdown-item" href="#">WALIMA</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled">Disabled</a>
+        </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+       </div>
+    </div>
+    </nav>
+    <!-- SLIDER -->  
+    <div class="slider m-2 h-sm-25">
+    <div id="carouselExampleCaptions" class="carousel slide m-2" >
+        <div class="carousel-indicators ">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/Burger.jpg" class="d-block w-100 " alt="Burger" height="600px">
+            <div class="carousel-caption d-none d-md-block fw-bold fs-4">
+              <h5>Chicken Burger</h5>
+              <p>Here is our special items.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/tika.jpeg" class="d-block w-100" alt="..." height="600px">
+            <div class="carousel-caption d-none d-md-block fw-bold fs-4">
+              <h5>Chicken Tikkah</h5>
+              <p>Here is our special items.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/chicken karahi.jpg" class="d-block w-100" alt="..." height="600px">
+            <div class="carousel-caption d-none d-md-block fw-bold fs-4">
+              <h5>Chicken Karahi</h5>
+              <p>Here is our special items.</p>
+            </div>
+          </div>
+        </div>
+        
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <!-- Ad container -->
+    <div class="container-fluid ad mx-3 bg-danger p-4 w-100 text-center text-light fs-4 fw-bold">Regatta Drive, Las Vegas, NV 89128</div>
+    <!-- Trending Items -->
+    <div class="container-fluid my-4 p-4 w-100 text-center text-dark fs-3 fw-bolder">Trending On <span class="text-warning">Food Walah</span></div>
+    <div class="row d-flex justify-content-center">
+            <div class="col-12 col-sm-8 col-md-6 col-lg-4 col-xl-3 my-3 ms-3">
+                <div class="card" style="width: 18rem;">
+                   <img src="images/makhni handi.jpg" class="card-img-top" alt="Chicken Makhni Handi" height="190px""> 
+                   <div class="card-body">
+                      <h5 class="card-title fw-bolder">CHICKEN MAKHNI HANDI</h5>
+                      <p class="card-text">A NEWLY COME DISH AND A VERY DELICIOUS DISH.</p>
+                      <a href="chk_handi.html" class="btn btn-secondary">Order</a>
+                    </div>
+                </div>
+            </div>
+            <div class=" col-12 col-sm-8 col-md-6 col-lg-4 col-xl-3 my-3 ms-3">
+                <div class="card" style="width: 18rem;">
+                   <img src="images/fish haryali biryani.jpg" class="card-img-top" alt="Chicken Makhni Handi">
+                   <div class="card-body">
+                      <h5 class="card-title fw-bolder">FISH HARYALI BIRYANI</h5>
+                      <p class="card-text">A MILD AND DELICIOUS TASTY FISH BIRYANI.</p>
+                      <a href="FishBiryani.html" class="btn btn-secondary">Order</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-8 col-md-6 col-lg-4 col-xl-3 my-3 ms-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/Reshmi kabab.jpg" class="card-img-top" alt="Chicken Makhni Handi">
+                    <div class="card-body">
+                       <h5 class="card-title fw-bolder">CHICKEN RESHMI KABAB</h5>
+                       <p class="card-text">A DELICIOUS TASTE WITH TENDORLESS KABAB.</p>
+                       <a href="chk.Reshmi.html" class="btn btn-secondary">Order</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-8 col-md-6 col-lg-4 col-xl-3 my-3 ms-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/chicken patty.jpg" class="card-img-top" alt="Chicken Makhni Handi" height="190px"> 
+                    <div class="card-body">
+                       <h5 class="card-title fw-bolder">Healthy Chicken Patty</h5>
+                       <p class="card-text">A MILD, CREAMY, CRISPY AND JUICY KABAB WITH TENDOR MEAT PATTY.</p>
+                       <a href="chkPatty.html" class="btn btn-secondary">Order</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-8 col-md-6 col-lg-4 col-xl-3 my-3 ms-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/Qeema.jpg" class="card-img-top" alt="Chicken Makhni Handi" height="190px""> 
+                    <div class="card-body">
+                       <h5 class="card-title fw-bolder">CHICKEN QEEMA</h5>
+                       <p class="card-text">A DELICIOUS AND A VERY HEALTHY MEAL WITH JUICY AND SPICY TASTE.</p>
+                       <a href="chkQeema.html" class="btn btn-secondary">Order</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-8 col-md-6 col-lg-4 col-xl-3 my-3 ms-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/chicken roll.jpg" class="card-img-top" alt="Chicken Makhni Handi" height="190x""> 
+                    <div class="card-body">
+                       <h5 class="card-title fw-bolder">CHICKEN ROLL</h5>
+                       <p class="card-text">A MOUTHWATERING AND A TASTY ROLLS WITH OVERLOADED CHICKEN.</p>
+                       <a href="chkRoll.html" class="btn btn-secondary">Order</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-8 col-md-6 col-lg-4 col-xl-3 my-3 ms-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/Chicken Biryani.jpg" class="card-img-top" alt="Chicken Biryani" height="190px"> 
+                    <div class="card-body">
+                       <h5 class="card-title fw-bolder">CHICKEN BIRYANI</h5>
+                       <p class="card-text"> THE ROBUST FLAVOUR FROM A VARIETY OF SPICIES...</p>
+                       <a href="chkBiryani.html" class="btn btn-secondary">Order</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-8 col-md-6 col-lg-4 col-xl-3 my-3 ms-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/Chicken Sheesh Kabab.jpg" class="card-img-top" alt="Chicken Sheesh Kabab" height="190px""> 
+                    <div class="card-body">
+                       <h5 class="card-title fw-bolder">CHICKEN SHEESH KABAB</h5>
+                       <p class="card-text">JUICY KABAB WITH TENDORLESS MEAT AND LITTE BIT SPICY TASTE.</p>
+                       <a href="chkSeeshKabab.html" class="btn btn-secondary">Order</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-8 col-md-6 col-lg-4 col-xl-3 my-3 ms-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/Makhni Dal.jpg" class="card-img-top" alt="Makhni Dal" height="190x""> 
+                    <div class="card-body">
+                       <h5 class="card-title fw-bolder">MAKHNI DAL</h5>
+                       <p class="card-text">THE RICHNESS OF THE BUTTER, AND THE CORNUCOPIA OF SPICIES.</p>
+                       <a href="makhniDal.html" class="btn btn-secondary">Order</a>
+                    </div>
+                </div>
+            </div>    
+    </div>
+    <!-- Pizza Items -->
+    <div class="container-fluid my-4 p-4 w-100 text-center text-dark fs-3 fw-bolder">Pizza Items Of <span class="text-warning">Food Walah</span></div>
+    <div class="row d-flex justify-content-center">
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 my-3 ms-3">
+                <div class="card" style="width: 18rem;">
+                   <img src="images/Arabian green pizza.jpg" class="card-img-top" alt="Arabian Green Pizza" height="190px""> 
+                   <div class="card-body">
+                      <h5 class="card-title fw-bolder">ARABIAN GREEN PIZZA</h5>
+                      <p class="card-text">GREEN SAUCE, ARABIAN CHICKEN, ONIONS, GREEN...</p>
+                      <a href="ArabianGrnPizza.html" class="btn btn-secondary">Order</a>
+                    </div>
+                </div>
+            </div>
+            <div class=" col-12 col-md-6 col-lg-4 col-xl-3 my-3 ms-3">
+                <div class="card" style="width: 18rem;">
+                   <img src="images/Chicken Max.jpg" class="card-img-top" alt="Chicken Max Pizza" height="190px">
+                   <div class="card-body">
+                      <h5 class="card-title fw-bolder">CHICKEN MAX PIZZA</h5>
+                      <p class="card-text">PIZZA SAUCE, CHK FAJITA, CHK TIKKA, SMOKE CHK,CH...</p>
+                      <a href="ChkMaxPizza.html" class="btn btn-secondary">Order</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 my-3 ms-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/Beef Max Pizza.jpg" class="card-img-top" alt="Beef Max Pizza" height="190px" >
+                    <div class="card-body">
+                       <h5 class="card-title fw-bolder">BEEF MAX PIZZA</h5>
+                       <p class="card-text">PIZZA SAUCE, MARINATED BEEF, SMOKED VEAL...</p>
+                       <a href="beefMaxPizza.html" class="btn btn-secondary">Order</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 my-3 ms-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/Italian Light Pizza.jpg" class="card-img-top" alt="Italian Light Pizza" height="190px"> 
+                    <div class="card-body">
+                       <h5 class="card-title fw-bolder">ITALIAN LIGHT PIZZA</h5>
+                       <p class="card-text">PIZZA SAUCE, CHK SAUCAGES, SMOKED CHK...</p>
+                       <a href="italianPizza.html" class="btn btn-secondary">Order</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 my-3 ms-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/Spicy Sensation Pizza.jpg" class="card-img-top" alt="Spicy Italian Pizza" height="190px""> 
+                    <div class="card-body">
+                       <h5 class="card-title fw-bolder">SPICY ITALIAN PIZZA</h5>
+                       <p class="card-text">PIZZA SAUCE, CHK SAUCAGES, MUSHROOMS, OLIVES...</p>
+                       <a href="SpicyItalian.html" class="btn btn-secondary">Order</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 my-3 ms-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/Beef Sensation Pizza.jpg" class="card-img-top" alt="Beef Sensation Pizza" height="190x""> 
+                    <div class="card-body">
+                       <h5 class="card-title fw-bolder">BEEFY SENSATION PIZZA</h5>
+                       <p class="card-text">COMBINATION OF BEEF WITH TOMATOES, ONIONS GREEN...</p>
+                       <a href="beefySensationPizza.html" class="btn btn-secondary">Order</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 my-3 ms-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/kabab Chaska.jpg" class="card-img-top" alt="Kabab Chaska Pizza" height="190px"> 
+                    <div class="card-body">
+                       <h5 class="card-title fw-bolder">KABAB CHASKA PIZZA</h5>
+                       <p class="card-text">PIZZA SAUCE, TIKKA FLAVOUR CHK, ONION,...</p>
+                       <a href="kababChaskaPizza.html" class="btn btn-secondary">Order</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 my-3 ms-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/Bihari Tikka Pizza.jpg" class="card-img-top" alt="Behari Tikka Pizza" height="190px""> 
+                    <div class="card-body">
+                       <h5 class="card-title fw-bolder">BIHARI TIKKA PIZZA</h5>
+                       <p class="card-text">SPICY SAUCE, BIHARI SAUCE, ONIONS, CHEESE...</p>
+                       <a href="bihariTikkaPizza.html" class="btn btn-secondary">Order</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 my-3 ms-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/Beef Sensation Pizza.jpg" class="card-img-top" alt="Chicken Fajita Pizza" height="190x""> 
+                    <div class="card-body">
+                       <h5 class="card-title fw-bolder">CHICKEN FAJITA PIZZA</h5>
+                       <p class="card-text">PIZZA SAUCE, MARINATED CHK, ONIONS, GREEN..</p>
+                       <a href="chkFajitaPizza.html" class="btn btn-secondary">Order</a>
+                    </div>
+                </div>
+            </div>     
+    </div>
+    <!-- Barbque Items -->
+    <div class="container-fluid my-4 p-4 w-100 text-center text-dark fs-3 fw-bolder">Barbque Of <span class="text-warning">Food Walah</span></div>
+    <div class="row d-flex justify-content-center">
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 my-3 ms-3">
+                <div class="card" style="width: 18rem;">
+                   <img src="images/Bihari Boti.jpeg" class="card-img-top" alt="Chicken Bihari Boti" height="190px""> 
+                   <div class="card-body">
+                      <h5 class="card-title fw-bolder">CHICKEN TANDOORI BOTI</h5>
+                      <p class="card-text">GRILLED CHICKEN WITH SPICIES AND SAUCES.</p>
+                      <a href="chkTandooriBoti.html" class="btn btn-secondary">Order</a>
+                    </div>
+                </div>
+            </div>
+            <div class=" col-12 col-md-6 col-lg-4 col-xl-3 my-3 ms-3">
+                <div class="card" style="width: 18rem;">
+                   <img src="images/chicken Afghani Tikka.jpg" class="card-img-top" alt="chicken Afghani Tikka" height="190px">
+                   <div class="card-body">
+                      <h5 class="card-title fw-bolder">CHICKEN AFGHANI TIKKA</h5>
+                      <p class="card-text">AFGHANI TIKKA, A DISH OF AFGHAN.</p>
+                      <a href="chkAfghaniTikka.html" class="btn btn-secondary">Order</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 my-3 ms-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/Chicken Hunzai Kabab.jpg" class="card-img-top" alt="Chicken Hunzai Kabab" height="190px" >
+                    <div class="card-body">
+                       <h5 class="card-title fw-bolder">CHICKEN HUNZAI KABAB</h5>
+                       <p class="card-text"> CHICKEN HUNZAI IS ONE OF THE BEST KABAB IN PAKISTAN.</p>
+                       <a href="chkHunzaiKabab.html" class="btn btn-secondary">Order</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 my-3 ms-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/Chicken Masto Chops.jpeg" class="card-img-top" alt="Chicken Masto Chops" height="190px"> 
+                    <div class="card-body">
+                       <h5 class="card-title fw-bolder">CHICKEN MASTO CHOPS</h5>
+                       <p class="card-text">ENJOY THE TRUE ESSENCE AND TASTE OF CHICKEN MASTO CHOPS.</p>
+                       <a href="chkMastoChops.html" class="btn btn-secondary">Order</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 my-3 ms-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/Spicy Chicken Meshwi.jpg" class="card-img-top" alt="Spicy Chicken Meshwi" height="190px""> 
+                    <div class="card-body">
+                       <h5 class="card-title fw-bolder">SPICY CHICKEN MESHWI</h5>
+                       <p class="card-text">BONELESS CHICKEN CHUNKS MARINATED IN CHILLI & SPICIES.</p>
+                       <a href="spicyChkMeshwi.html" class="btn btn-secondary">Order</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 my-3 ms-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/Mix Grilled.jpg" class="card-img-top" alt="Mix Grilled" height="190x""> 
+                    <div class="card-body">
+                       <h5 class="card-title fw-bolder">MIX GRILLED</h5>
+                       <p class="card-text">SPICY CHICKEN MESHWI | BEEF MESHWI | CHICKEN KAFTA.</p>
+                       <a href="mixGrilled.html" class="btn btn-secondary">Order</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 my-3 ms-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/Family Platter.jpg" class="card-img-top" alt="Family Platter" height="190px"> 
+                    <div class="card-body">
+                       <h5 class="card-title fw-bolder">FAMILY PLATTER</h5>
+                       <p class="card-text">A FAMILY PACK ITEM WITH COVERING ALL BBQ ITEMS.</p>
+                       <a href="familyPlatter.html" class="btn btn-secondary">Order</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 my-3 ms-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/Chicken Wings.jpg" class="card-img-top" alt="Chicken Wings" height="190px""> 
+                    <div class="card-body">
+                       <h5 class="card-title fw-bolder">CHICKEN WINGS</h5>
+                       <p class="card-text">FRIED CHICKEN WINGS IN BUFFALO-STYLE TASTE.</p>
+                       <a href="chkWings.html" class="btn btn-secondary">Order</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 my-3 ms-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/Steak.jpg" class="card-img-top" alt="Steak" height="190x""> 
+                    <div class="card-body">
+                       <h5 class="card-title fw-bolder">STEAK</h5>
+                       <p class="card-text"> GRILLED RIB-EYE STEAK, SIRLOIN, OR STRIP STEAK...</p>
+                       <a href="Steak.html" class="btn btn-secondary">Order</a>
+                    </div>
+                </div>
+            </div>     
+    </div>
+    <!-- Mandi Items -->
+    <div class="container-fluid my-4 p-4 w-100 text-center text-dark fs-3 fw-bolder">Mandi Items On <span class="text-warning">Food Walah</span></div>
+    <div class="row d-flex justify-content-center">
+            <div class="col-12 col-sm-8 col-md-6 col-lg-4 col-xl-3 my-3 ms-3">
+                <div class="card" style="width: 18rem;">
+                   <img src="images/Chicken Mandi.jpg" class="card-img-top" alt="CHICKEN MANDI" height="190px"> 
+                   <div class="card-body">
+                      <h5 class="card-title fw-bolder">CHICKEN MANDI</h5>
+                      <p class="card-text">A SCRUMPITIOUS SERVING OF TENDER AND JUICY COOKED CHICKEN.</p>
+                      <a href="chkMandi.html" class="btn btn-secondary">Order</a>
+                    </div>
+                </div>
+            </div>
+            <div class=" col-12 col-sm-8 col-md-6 col-lg-4 col-xl-3 my-3 ms-3">
+                <div class="card" style="width: 18rem;">
+                   <img src="images/Chicken Madbee.jpg" class="card-img-top" alt="Chicken Madbee" height="190px">
+                   <div class="card-body">
+                      <h5 class="card-title fw-bolder">CHICKEN MADBEE</h5>
+                      <p class="card-text">PICY CHARCOAL GRILLED CHICKEN MARINATEDIN OUR SPECIAL BLEND.</p>
+                      <a href="chkMadbee.html" class="btn btn-secondary">Order</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-8 col-md-6 col-lg-4 col-xl-3 my-3 ms-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/Chicken Madfoon.jpg" class="card-img-top" alt="Chicken Madfoon" height="190px">
+                    <div class="card-body">
+                       <h5 class="card-title fw-bolder">CHICKEN MADFOON</h5>
+                       <p class="card-text">SUCCULENT CHICKEN MARINATED AND SEASONED IN AROMATIC HERBS AND SPICIES.</p>
+                       <a href="chkMadfoon.html" class="btn btn-secondary">Order</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-8 col-md-6 col-lg-4 col-xl-3 my-3 ms-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/Chicken Faham.jpg" class="card-img-top" alt="Chicken Faham" height="190px"> 
+                    <div class="card-body">
+                       <h5 class="card-title fw-bolder">CHICKEN FAHAM</h5>
+                       <p class="card-text">A DELIGHTFUL SERVING OF GRILLED CHICKEN PIQUANT SAUCE BRUSHED.</p>
+                       <a href="chkFaham.html" class="btn btn-secondary">Order</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-8 col-md-6 col-lg-4 col-xl-3 my-3 ms-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/Chicken Kafta Mandi.jpg" class="card-img-top" alt="Chicken Kafta Mandi" height="190px""> 
+                    <div class="card-body">
+                       <h5 class="card-title fw-bolder">CHICKEN KAFTA MANDI</h5>
+                       <p class="card-text">A DELICIOUS AND A VERY HEALTHY MEAL WITH JUICY AND SPICY TASTE.</p>
+                       <a href="chkKaftaMandi.html" class="btn btn-secondary">Order</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-8 col-md-6 col-lg-4 col-xl-3 my-3 ms-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/Riz Ala Dajjaj.jpg" class="card-img-top" alt="Riz Ala Dajjaj" height="190x""> 
+                    <div class="card-body">
+                       <h5 class="card-title fw-bolder">RIZ ALA DAJJAJ</h5>
+                       <p class="card-text">SPICY GRILLED CHICKEN FILLETS MARINATED SEASONED IN AROMATIC HERBS.</p>
+                       <a href="rizAlaDajjaj.html" class="btn btn-secondary">Order</a>
+                    </div>
+                </div>
+            </div>
+                
+    </div>
+    <!-- Desert -->
+    <div class="container-fluid my-4 p-4 w-100 text-center text-dark fs-3 fw-bolder">Deserts Items On <span class="text-warning">Food Walah</span></div>
+    <div class="row d-flex justify-content-center">
+            <div class="col-12 col-sm-8 col-md-6 col-lg-4 col-xl-3 my-3 ms-3">
+                <div class="card" style="width: 18rem;">
+                   <img src="images/Khunafa.jpg" class="card-img-top" alt="KHUNAFA" height="190px"> 
+                   <div class="card-body">
+                      <h5 class="card-title fw-bolder">KHUNAFA</h5>
+                      <p class="card-text">FAMOUSE CREAM AND CHEESE FILLED PASTRY, COOKED IN BUTTER.</p>
+                      <a href="#" class="btn btn-secondary">Order</a>
+                    </div>
+                </div>
+            </div>
+            <div class=" col-12 col-sm-8 col-md-6 col-lg-4 col-xl-3 my-3 ms-3">
+                <div class="card" style="width: 18rem;">
+                   <img src="images/Walnut Signature Brownie.jpg" class="card-img-top" alt="Walnut Signature Brownie" height="190px">
+                   <div class="card-body">
+                      <h5 class="card-title fw-bolder">WALNUT SIGNATURE BROWNIE </h5>
+                      <p class="card-text">OUR WALNUT BROWNIE IS THE STEPPING STONE, THE...</p>
+                      <a href="#" class="btn btn-secondary">Order</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-8 col-md-6 col-lg-4 col-xl-3 my-3 ms-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/Gajjar Halwa.jpg" class="card-img-top" alt="Gajjar Halwa" height="190px">
+                    <div class="card-body">
+                       <h5 class="card-title fw-bolder">GAJJAR HALWA</h5>
+                       <p class="card-text">CARROT-BASED SWEET DESSERT PUDDING AND CARDAMOM WITH SPECIFIC AMOUNT OF WATER.</p>
+                       <a href="#" class="btn btn-secondary">Order</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-8 col-md-6 col-lg-4 col-xl-3 my-3 ms-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/Chicken Faham.jpg" class="card-img-top" alt="Chicken Faham" height="190px"> 
+                    <div class="card-body">
+                       <h5 class="card-title fw-bolder">CHICKEN FAHAM</h5>
+                       <p class="card-text">A DELIGHTFUL SERVING OF GRILLED CHICKEN PIQUANT SAUCE BRUSHED.</p>
+                       <a href="#" class="btn btn-secondary">Order</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-8 col-md-6 col-lg-4 col-xl-3 my-3 ms-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/Chicken Kafta Mandi.jpg" class="card-img-top" alt="Chicken Kafta Mandi" height="190px""> 
+                    <div class="card-body">
+                       <h5 class="card-title fw-bolder">CHICKEN KAFTA MANDI</h5>
+                       <p class="card-text">A DELICIOUS AND A VERY HEALTHY MEAL WITH JUICY AND SPICY TASTE.</p>
+                       <a href="#" class="btn btn-secondary">Order</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-8 col-md-6 col-lg-4 col-xl-3 my-3 ms-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/Riz Ala Dajjaj.jpg" class="card-img-top" alt="Riz Ala Dajjaj" height="190x""> 
+                    <div class="card-body">
+                       <h5 class="card-title fw-bolder">RIZ ALA DAJJAJ</h5>
+                       <p class="card-text">SPICY GRILLED CHICKEN FILLETS MARINATED SEASONED IN AROMATIC HERBS.</p>
+                       <a href="#" class="btn btn-secondary">Order</a>
+                    </div>
+                </div>
+            </div>
+                
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script> 
+</body>
+</html>
